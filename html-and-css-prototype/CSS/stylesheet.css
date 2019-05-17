@@ -44,8 +44,6 @@ h1 {
 /* Your CSS code goes here */
 
 
-
-
 .project_container {
     display: grid;
     justify-content: center;
@@ -65,21 +63,6 @@ p {
     color: #828282;
 }
 
-.speech-bubble-rect::before {
-    background-color: #f8f8f8;
-    border: 1px solid #c8c8c8;
-    border-radius: 5px;
-    width: 110px;
-    text-align: center;
-    padding: 20px;
-    position: absolute;
-}
-
-
-.speech-bubble-tri{
-
-}
-
 #progress_message {
     background-color: #424242;
     color: white;
@@ -94,7 +77,26 @@ p {
     border-bottom-width: 0;
     height: 0.75em;
     background: linear-gradient(to right, #f15e33 70%, #fafafa 30%);
+    position: relative;
 }
+
+
+/*I attempted to create a tail for the speech bubble, */
+/*but it would shift as the page expanded and contracted*/
+
+
+/*.speech-bubble-tri::after {*/
+/*    content: "";*/
+/*    bottom: -15px;*/
+/*    left: 70px;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-width: 6px 6px 0;*/
+/*    border-style: solid;*/
+/*    border-color: #424242 transparent;*/
+/*    position: absolute;*/
+/*}*/
+
 
 .project_details {
 	display: grid;
