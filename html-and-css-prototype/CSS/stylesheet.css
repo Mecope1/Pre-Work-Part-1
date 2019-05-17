@@ -24,6 +24,8 @@ h1 {
 	text-align: center;
 }
 
+
+
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
 
 	FONTS:
@@ -40,3 +42,163 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+
+p {
+	color: #828282;
+}
+
+.project_details {
+	display: grid;
+	border: 1px solid #dcdcdc;
+	width: 100%;
+	justify-content: end;
+	font-size: 11px;
+	padding: 1rem;
+}
+
+#progress_message {
+	background-color: #424242;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	padding: 1em;
+	border-radius: 0.25em;
+}
+
+.speech-bubble-rect::before {
+	background-color: #f8f8f8;
+	border: 1px solid #c8c8c8;
+	border-radius: 5px;
+	width: 110px;
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+}
+
+
+.speech-bubble-tri{
+
+}
+
+
+#donor-num {
+	font-weight: bold;
+}
+.project_button {
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	font-weight: bold;
+	border-radius: 5%;
+}
+
+.project_button_primary {
+	background-color: #00be1c;
+	color: #ffffff;
+	padding: 1rem;
+	border: none;
+	width: 6rem;
+	margin-right: 0.5rem;
+}
+
+
+.donation-input {
+	width: 6rem;
+	height: 2.75rem;
+	margin-right: 0.5rem;
+	border: 1px solid #dcdcdc;
+	border-radius: 5%;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.dollar-sign-input {
+	position: relative;
+}
+
+.dollar-sign-input > i {
+	position: absolute;
+	display: block;
+	transform: translate(0, -50%);
+	top: 46%;
+	pointer-events: none;
+	width: 28px;
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	color: #828282;
+}
+
+.dollar-sign-input > input {
+	padding-left: 25px;
+	padding-right: 0;
+}
+
+
+
+
+.project_button_last_row {
+	font-size: 8pt;
+	background-color: #fafafa;
+	color: #777777;
+	border: 1px solid #dcdcdc;
+	border-radius: 2px;
+	padding-top: 1em;
+	padding-bottom: 1.8em;
+	width: 100%;
+	height: 75%;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.project_container {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 260px;
+	padding: 1rem;
+}
+
+.row {
+	grid-column: 1;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.track-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 1em;
+}
+
+.track-item {
+	grid-row: 1;
+}
+
+/*.donation-form{*/
+/*	display: grid;*/
+/*	height: 1.5em;*/
+/*	align-items: center;*/
+/*}*/
+
+
+
+#days_left {
+	color: #f15e33;
+}
+
+#progress-indicator {
+	border: 1px solid #dcdcdc;
+	border-bottom-width: 0;
+	height: 0.75em;
+	background: linear-gradient(to right, #f15e33 70%, #fafafa 30%);
+
+
+}
+
+.explain-why{
+	font-style: italic;
+	text-decoration: none;
+	color: #3eadd9;
+}
+

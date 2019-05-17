@@ -6,14 +6,52 @@
     <link rel="stylesheet" href="CSS/stylesheet.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Recreate this using HTML &amp; CSS</h1>
-      <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
+  <div class="container">
+    <h1>Recreate this using HTML &amp; CSS</h1>
+    <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
+  </div>
+
+  <!-- Your code goes here -->
+
+  <div class="project_container">
+    <div class="row speech-bubble-rect">
+      <div class="speech-bubble-tri">
+      <p id="progress_message">$167 still needed for this project</p>
+      </div>
     </div>
 
-    <!-- Your code goes here -->
+    <div id="progress-indicator">
+    </div>
+
+    <div class="row project_details">
+      <div class="row">
+        <p><span id="days_left">Only 3 days left</span> to fund this project.</p>
+      </div>
+
+      <div class="row">
+        <p>Join the <span id="donor-num">42</span> other donors who have already supported this project. Every dollar helps.</p>
+      </div>
 
 
+      <form class="row track-2">
+        <div class="dollar-sign-input">
+          <i class="dollar-sign-format">$</i>
+          <input value="50" class="donation-input">
+        </div>
+        <button type="submit" class="project_button project_button_primary">Give Now</button>
+      </form>
+
+      <div class="row">
+        <p><a href="#" class="explain-why">Why give $50?</a></p>
+      </div>
+    </div>
+
+    <div class="row track-2">
+      <button class="project_button project_button_last_row">Save for later</button>
+      <button class="project_button project_button_last_row">Tell your friends</button>
+    </div>
+  </div>
 
   </body>
 </html>
+
