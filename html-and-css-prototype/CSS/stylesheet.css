@@ -44,8 +44,56 @@ h1 {
 /* Your CSS code goes here */
 
 
+
+
+.project_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 260px;
+    padding: 1rem;
+}
+
+.row {
+    grid-column: 1;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
 p {
-	color: #828282;
+    color: #828282;
+}
+
+.speech-bubble-rect::before {
+    background-color: #f8f8f8;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    width: 110px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+}
+
+
+.speech-bubble-tri{
+
+}
+
+#progress_message {
+    background-color: #424242;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.25em;
+}
+
+#progress-indicator {
+    border: 1px solid #dcdcdc;
+    border-bottom-width: 0;
+    height: 0.75em;
+    background: linear-gradient(to right, #f15e33 70%, #fafafa 30%);
 }
 
 .project_details {
@@ -57,34 +105,53 @@ p {
 	padding: 1rem;
 }
 
-#progress_message {
-	background-color: #424242;
-	color: white;
-	font-size: 13px;
-	text-align: center;
-	padding: 1em;
-	border-radius: 0.25em;
+#days_left {
+    color: #f15e33;
 }
-
-.speech-bubble-rect::before {
-	background-color: #f8f8f8;
-	border: 1px solid #c8c8c8;
-	border-radius: 5px;
-	width: 110px;
-	text-align: center;
-	padding: 20px;
-	position: absolute;
-}
-
-
-.speech-bubble-tri{
-
-}
-
 
 #donor-num {
 	font-weight: bold;
 }
+
+.track-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+}
+
+.dollar-sign-input {
+    position: relative;
+}
+
+.dollar-sign-input > i {
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 46%;
+    pointer-events: none;
+    width: 28px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #828282;
+}
+
+.dollar-sign-input > input {
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.donation-input {
+    width: 95%;
+    height: 2.75rem;
+    margin-right: 0.5rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 5%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 .project_button {
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	font-weight: bold;
@@ -96,46 +163,15 @@ p {
 	color: #ffffff;
 	padding: 1rem;
 	border: none;
-	width: 6rem;
-	margin-right: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
 }
 
-
-.donation-input {
-	width: 6rem;
-	height: 2.75rem;
-	margin-right: 0.5rem;
-	border: 1px solid #dcdcdc;
-	border-radius: 5%;
-	font-weight: bold;
-	font-size: 1rem;
+.explain-why{
+    font-style: italic;
+    text-decoration: none;
+    color: #3eadd9;
 }
-
-.dollar-sign-input {
-	position: relative;
-}
-
-.dollar-sign-input > i {
-	position: absolute;
-	display: block;
-	transform: translate(0, -50%);
-	top: 46%;
-	pointer-events: none;
-	width: 28px;
-	text-align: center;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 1rem;
-	color: #828282;
-}
-
-.dollar-sign-input > input {
-	padding-left: 25px;
-	padding-right: 0;
-}
-
-
-
 
 .project_button_last_row {
 	font-size: 8pt;
@@ -151,54 +187,9 @@ p {
 	text-align: center;
 }
 
-.project_container {
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	grid-template-columns: 260px;
-	padding: 1rem;
-}
-
-.row {
-	grid-column: 1;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-}
-
-.track-2 {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 1em;
-}
-
-.track-item {
-	grid-row: 1;
-}
-
-/*.donation-form{*/
-/*	display: grid;*/
-/*	height: 1.5em;*/
-/*	align-items: center;*/
-/*}*/
 
 
 
-#days_left {
-	color: #f15e33;
-}
-
-#progress-indicator {
-	border: 1px solid #dcdcdc;
-	border-bottom-width: 0;
-	height: 0.75em;
-	background: linear-gradient(to right, #f15e33 70%, #fafafa 30%);
 
 
-}
-
-.explain-why{
-	font-style: italic;
-	text-decoration: none;
-	color: #3eadd9;
-}
 
